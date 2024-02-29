@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches: ["main"]
 
 permissions:
   id-token: write # This is required for federation to Defender for DevOps
