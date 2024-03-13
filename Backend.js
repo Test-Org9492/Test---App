@@ -38,21 +38,7 @@ function LoginForm({ onLogin }) {
         <input
           type="password"
           id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <button onClick={handleLogin}>Login</button>
-    </div>
-  );
-}
-
-function App() {
-  const [token, setToken] = useState('');
-
-  const handleLogin = (newToken) => {
-    setToken(newToken);
-  };
+      
 
   const handleLogout = () => {
     setToken('');
